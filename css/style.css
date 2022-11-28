@@ -25,7 +25,14 @@ body{
 }
 
 .button-link{
-    
+    font-family: 'PT Mono', monospace;
+    display: block;
+    width: fit-content;
+    padding: 7px 30px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+    background-color: var(--primary-color);
 }
 
 :root{
@@ -33,6 +40,7 @@ body{
     --primary-color-light: #b5ddff;
     --secondary-color: #9792e4;
     --padding: 3rem 0;
+    --card-padding: 1.25rem;
 }
 
 /* REGOLE HEADER */
@@ -83,15 +91,27 @@ main section{
 #panoramica .card{
     background-color: var(--primary-color-light);
     width: calc((100% / 3) - 1.5rem);
+    padding: var(--card-padding);
     margin-left: 0.75rem;
     margin-right: 0.75rem;
     margin-bottom: 0.75rem;
     border: 1px dashed black;
+    
+}
+
+#panoramica .card > *{
+    margin-bottom: 0.75rem
+}
+
+#panoramica h3,
+#panoramica i:not(.fa-apple){
+    color: var(--primary-color);
 }
 
 #panoramica .card:first-child{
         width: calc(((100% / 3) - 0.75rem) * 2);
 }
+
 
 #planning{
     background-color: var(--secondary-color);
