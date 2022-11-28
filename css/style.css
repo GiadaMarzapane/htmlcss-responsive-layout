@@ -131,6 +131,9 @@ main section{
     border: 1px dashed black;
 }
 
+#get-strted{
+    background-color: var(--secondary-color);
+}
 
 /* media query */
 
