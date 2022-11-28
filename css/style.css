@@ -24,6 +24,10 @@ body{
     text-align: center;
 }
 
+.button-link{
+    
+}
+
 :root{
     --primary-color: #0084fd;
     --primary-color-light: #b5ddff;
@@ -34,19 +38,34 @@ body{
 /* REGOLE HEADER */
 header{
     background-color: var(--primary-color);
+    height: 50px;
+}
+#logo-img{
+    height: 30px;
 }
 
 header div.flex{
     justify-content: space-between;
+    align-items: center;
+    height: 100%;
 }
 
 header ul li{
     display: inline-block;
     list-style: none;
+    margin: 0 0.5rem;
 }
 
 header ul li a{
     text-decoration: none;
+    color: white;
+}
+
+#get-started-button{
+    color: #333;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
 }
 
 /* REGOLE MAIN */
@@ -133,6 +152,13 @@ main section{
 
 #get-started{
     background-color: var(--secondary-color);
+}
+
+/* REGOLE FOOTER */
+footer{
+    background-color: #333333;
+    color: white;
+    padding: 2rem 0;
 }
 
 /* media query */
