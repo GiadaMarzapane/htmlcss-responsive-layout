@@ -113,6 +113,24 @@ main section{
     border: 1px dashed black;
 }
 
+#about-us .container{
+    padding: 0 3rem;
+}
+
+#about-us .flex{
+    justify-content: center;
+}
+
+#about-us .flex .card:first-of-type{
+    width: calc(80% - 1.5rem);
+}
+
+#about-us .flex .card{
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    border: 1px dashed black;
+}
+
 
 /* media query */
 
