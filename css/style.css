@@ -20,6 +20,10 @@ body{
     display: flex;
 }
 
+.text-center{
+    text-align: center;
+}
+
 :root{
     --primary-color: #0084fd;
     --primary-color-light: #b5ddff;
@@ -48,7 +52,8 @@ header ul li a{
 /* REGOLE MAIN */
 
 #panoramica,
-#planning{
+#planning,
+#testimonials{
     padding: var(--padding);
 }
 
@@ -78,6 +83,17 @@ header ul li a{
 #planning .flex{
     justify-content: space-around;
     align-items: flex-end;
+}
+
+#testimonials .quote{
+    background-color: var(--secondary-color);
+    color: white;
+    margin-bottom: 0.75rem;
+}
+
+#testimonials .text-center,
+#testimonials .text-center > *{
+    margin-bottom: 0.75rem;
 }
 
 
