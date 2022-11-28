@@ -24,6 +24,7 @@ body{
     --primary-color: #0084fd;
     --primary-color-light: #b5ddff;
     --secondary-color: #9792e4;
+    --padding: 3rem 0;
 }
 
 /* REGOLE HEADER */
@@ -42,4 +43,35 @@ header ul li{
 
 header ul li a{
     text-decoration: none;
+}
+
+/* REGOLE MAIN */
+
+#panoramica{
+    padding: var(--padding);
+}
+
+#panoramica .flex{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 -0.75rem;
+}
+
+main .card{
+    background-color: var(--primary-color-light);
+    width: calc((100% / 3) - 1.5rem);
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    margin-bottom: 0.75rem;
+    border: 1px dashed black;
+}
+
+main .card:first-child{
+        width: calc(((100% / 3) - 0.75rem) * 2);
+}
+
+/* media query */
+
+@media screen and () {
+    
 }
