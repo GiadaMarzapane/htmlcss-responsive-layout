@@ -47,7 +47,8 @@ header ul li a{
 
 /* REGOLE MAIN */
 
-#panoramica{
+#panoramica,
+#planning{
     padding: var(--padding);
 }
 
@@ -57,7 +58,7 @@ header ul li a{
     margin: 0 -0.75rem;
 }
 
-main .card{
+#panoramica .card{
     background-color: var(--primary-color-light);
     width: calc((100% / 3) - 1.5rem);
     margin-left: 0.75rem;
@@ -66,9 +67,19 @@ main .card{
     border: 1px dashed black;
 }
 
-main .card:first-child{
+#panoramica .card:first-child{
         width: calc(((100% / 3) - 0.75rem) * 2);
 }
+
+#planning{
+    background-color: var(--secondary-color);
+}
+
+#planning .flex{
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
 
 /* media query */
 
