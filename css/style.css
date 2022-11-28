@@ -51,9 +51,7 @@ header ul li a{
 
 /* REGOLE MAIN */
 
-#panoramica,
-#planning,
-#testimonials{
+main section{
     padding: var(--padding);
 }
 
@@ -94,6 +92,25 @@ header ul li a{
 #testimonials .text-center,
 #testimonials .text-center > *{
     margin-bottom: 0.75rem;
+}
+
+#benefit{
+    background-color: var(--secondary-color);
+}
+
+#benefit .flex {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 -0.75rem;
+}
+
+#benefit .card {
+    background-color: white;
+    width: calc((100% / 3) - 1.5rem);
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    margin-bottom: 0.75rem;
+    border: 1px dashed black;
 }
 
 
