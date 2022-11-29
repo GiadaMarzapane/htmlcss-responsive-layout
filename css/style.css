@@ -339,6 +339,22 @@ a.linkedin-button i{
     padding-right: 3px;
 }
 
+#about-us .card:last-of-type div{
+    display: inline-block;
+    position: relative;
+    width: fit-content;
+}
+
+#violet-icon{
+    position: absolute;
+    color: var(--secondary-color);
+    font-size: 4rem;
+    top: -10px;
+    left: 110px;;
+}
+
+/************ GET STARTED ***********/
+
 #get-started{
     background-color: var(--secondary-color);
 }
@@ -446,6 +462,10 @@ footer a{
     #about-us .container,
     #about-us .flex .card{
         padding: 0;
+    }
+
+    #about-us .flex .card{
+        margin-top: 1.5rem;
     }
     
 }
