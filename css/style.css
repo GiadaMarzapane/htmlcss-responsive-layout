@@ -343,6 +343,53 @@ a.linkedin-button i{
     background-color: var(--secondary-color);
 }
 
+#get-started span{
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: 2px;
+}
+
+#get-started h2{
+    color: white;
+    font-size: 2rem;
+}
+
+h2#yellow-title{
+    color: #fdc15f;
+    font-size: 4rem;
+}
+
+#get-started p{
+    color: white;
+    font-size: 0.75rem;
+}
+
+#get-started p{
+    width: 60%;
+    margin: 1rem auto;
+}
+
+#get-started a.button-link{
+    margin: 0 auto;
+    background-color: white;
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 0.75rem;
+    padding: 20px 35px;
+    border-radius: 35px;
+}
+
+#get-started a{
+    color: white;
+}
+
+
+#get-started i{
+    font-size: 2.5px;
+    line-height: 0.75rem;
+    vertical-align: middle;
+}
+
 /* REGOLE FOOTER */
 footer{
     background-color: #333;
@@ -385,6 +432,7 @@ footer{
         width: calc(50% - 1.5rem);
     }
 
+    #about-us .container,
     #about-us .flex .card{
         padding: 0;
     }
@@ -435,4 +483,7 @@ footer{
     #about-us div.container div.flex div.card{
         width: calc(100% - 1.5rem);
     }
+
+    #get-started p {
+        width: 100%
 }
