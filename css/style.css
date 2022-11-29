@@ -53,6 +53,10 @@ body{
     margin: 1rem 0;
 }
 
+.card p{
+    color: #333;
+}
+
 :root{
     --primary-color: #0084fd;
     --primary-color-light: #b5ddff;
@@ -238,7 +242,7 @@ main section{
     font-weight: 900;
 }
 
-/* ********** BENEFIT ********** */
+/* ************BENEFIT************ */
 
 #benefit{
     background-color: var(--secondary-color);
@@ -251,13 +255,33 @@ main section{
 }
 
 #benefit .card {
-    background-color: white;
+    background-color:white;
     width: calc((100% / 3) - 1.5rem);
+    padding: var(--card-padding);
     margin-left: 0.75rem;
     margin-right: 0.75rem;
     margin-bottom: 0.75rem;
-    border: 1px dashed black;
+    border-radius: 20px;
 }
+
+#benefit h2{
+    color: white;
+}
+
+#benefit span{
+    font-size: 3.5rem;
+}
+
+#benefit span,
+#benefit h3{
+    color: var(--secondary-color);
+}
+
+.more-button{
+    background-color: var(--secondary-color);
+}
+
+/************ABOUT-US************/
 
 #about-us .container{
     padding: 0 3rem;
@@ -283,7 +307,7 @@ main section{
 
 /* REGOLE FOOTER */
 footer{
-    background-color: #333333;
+    background-color: #333;
     color: white;
     padding: 2rem 0;
 }
@@ -318,6 +342,10 @@ footer{
         width: calc(750px - 1.5rem);
         margin: 0 0.75rem;
 }
+
+    #benefit .card {
+        width: calc(50% - 1.5rem);
+}
 }
 /* media query MOBILE */
 
@@ -346,4 +374,7 @@ footer{
         width: 100%;
         text-align: center;
     }
+
+    #benefit .card {
+        width: calc(100% - 1.5rem);
 }
