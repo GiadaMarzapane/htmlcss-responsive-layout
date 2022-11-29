@@ -45,6 +45,14 @@ body{
     background-color: var(--primary-color);
 }
 
+.width100{
+    width: 100%;
+}
+
+.margin1rem{
+    margin: 1rem 0;
+}
+
 :root{
     --primary-color: #0084fd;
     --primary-color-light: #b5ddff;
@@ -66,6 +74,7 @@ header div.flex{
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    color: white;
 }
 
 header ul li{
@@ -77,6 +86,10 @@ header ul li{
 header ul li a{
     text-decoration: none;
     color: white;
+}
+
+i.fa-bars{
+    display: none;
 }
 
 #get-started-button{
@@ -141,14 +154,6 @@ main section{
     color: var(--primary-color);
 }
 
-#panoramica h3:not(h3:first-child){
-    margin: 1rem 0;
-}
-
-#panoramica .card-flex p {
-    margin: 1rem 0;
-}
-
 
 #planning{
     background-color: var(--secondary-color);
@@ -157,6 +162,39 @@ main section{
 #planning .flex{
     justify-content: space-around;
     align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+#planning .card{
+    width: calc(50% - 1.5rem);
+    margin: 0 0.75rem;
+    padding: var(--card-padding);
+}
+
+#planning .card:first-child{
+    padding: 3rem 3rem 0 3rem;
+    color: white;
+}
+
+#planning .card:first-child h3{
+    margin: 4rem 0 1.25rem 0;
+}
+
+#planning .card:last-child img{
+    width: 70%;
+}
+
+#planning .card:last-child{
+    background-color: white;
+    border-radius: 20px;
+}
+
+#arrow{
+    width: fit-content;
+    margin: 0 auto;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    padding: 5px 10px;
 }
 
 #testimonials .quote{
@@ -225,9 +263,24 @@ footer{
         max-width: 750px;
     }
 
+    header nav {
+        display: none;
+    }
+
+    i.fa-bars {
+        display: block;
+    }
+
     #panoramica .card-flex div {
         width: calc(100% - 1.5rem);
     }
+
+    #planning .card {
+        width: calc(100% - 1.5rem);
+    }
+
+    #planning .card:first-child {
+        padding: var(--card-padding);
 }
 
 /* media query MOBILE */
